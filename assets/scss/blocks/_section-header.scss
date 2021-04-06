@@ -1,0 +1,21 @@
+.section-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: get-color('primary');
+
+  &::after {
+    content: "";
+    flex: 1 1 auto;
+    border-bottom: solid 2px currentColor;
+  }
+  &[data-style="blank"] {
+    &::after {
+      content: none;
+    }
+  }
+  &[data-color="vc-purple"] { color: #8036AF; }  
+  &[data-color="vc-orange"] { color: #FFAC12; }
+  &[data-color="vc-pink"] { color: #FF157A; }
+  &[data-color="vc-turqoise"] { color: #019587; }
+}

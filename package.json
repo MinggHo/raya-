@@ -1,0 +1,17 @@
+{
+  "name": "says-raya",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "style": "npx sass ./assets/scss/app.scss ./assets/css/app.css --watch"
+  },
+  "devDependencies": {
+    "vite": "^2.1.5"
+  },
+  "dependencies": {
+    "gorko": "^0.2.3",
+    "sass": "^1.32.8"
+  }
+}

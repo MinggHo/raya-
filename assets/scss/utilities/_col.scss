@@ -1,0 +1,27 @@
+.two-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &[data-style="featured"] {
+    .featured__highlight {
+      flex: 1.9;
+    }
+    .featured__story-list {
+      flex: 1;
+    }
+  }
+
+  &[data-style="highlight-left"] {
+    > div {
+      flex: 1;
+    }
+    .highlight-story {
+      flex: 0 60%;
+    }
+  }
+
+  @include media-query('md') {
+    flex-direction: row;
+  }
+}
