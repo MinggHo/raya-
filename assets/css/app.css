@@ -2043,8 +2043,10 @@ body {
   display: flex;
   flex-flow: row nowrap;
   margin-top: 2rem;
-  gap: 1rem;
   overflow-x: scroll;
+}
+.story__listing[data-style=story-mode] .story__block + .story__block {
+  margin-left: 1rem;
 }
 .story__listing[data-style=story-mode] .story__block {
   flex-flow: column;

@@ -234,9 +234,11 @@ body {
     flex-flow: row nowrap;
     // margin-bottom: 5rem;
     margin-top: 2rem;
-    gap: 1rem;
     // Css snap scroll please.
     overflow-x: scroll;
+    .story__block + .story__block {
+      margin-left: 1rem;
+    }
     .story__block {
       flex-flow: column;
       flex: 0 0 45%;
