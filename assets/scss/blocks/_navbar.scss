@@ -1,0 +1,52 @@
+.nav__block {
+  overflow-x: scroll;
+  
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  ul {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 0;
+    display: inline-flex;
+    list-style-type: none;
+    flex-flow: row nowrap;
+    li {
+      white-space: nowrap;
+    }
+
+    li + li {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.raya-header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.header__logo {
+  img {
+    height: 2.75rem;
+  }
+}
+
+.menu__button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.menu__svg {
+  height: 0.85rem;
+  display: block;
+}

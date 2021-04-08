@@ -1,0 +1,22 @@
+.category__separator {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: #FFFFFF;
+  &::after {
+    content: "";
+    flex: 1 1 auto;
+    border-bottom: solid 2px currentColor;
+    margin-left: 14px;
+  }
+
+  &[data-style="center"] {
+    &::before {
+      content: "";
+      flex: 1 1 auto;
+      border-bottom: solid 2px currentColor;
+      margin-right: 14px;
+    } 
+  }
+}

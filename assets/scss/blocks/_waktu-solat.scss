@@ -1,0 +1,7 @@
+.waktu-solat {
+  height: 215px;
+  background-color: #16385D;
+  &[data-style="small"] {
+    height: 150px;
+  }
+}

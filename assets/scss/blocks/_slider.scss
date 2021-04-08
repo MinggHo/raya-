@@ -1,0 +1,66 @@
+
+.slider__nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  height: fit-content;
+  top: 50%;
+  transform: translateY(-50%);
+  svg {
+    width: 24px;
+  }
+  &.--prev {
+    left: 2rem;
+  }
+  &.--next {
+    right: 2rem;
+  }
+}
+
+.btn-icon {
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 .375C5.578.375.375 5.578.375 12S5.578 23.625 12 23.625 23.625 18.422 23.625 12 18.422.375 12 .375zm-1.36 6.75a1.119 1.119 0 01-.046-1.594l.515-.515c.47-.47 1.172-.47 1.594 0l6.235 6.234a1.103 1.103 0 010 1.547l-6.235 6.234c-.422.422-1.125.422-1.594 0l-.515-.515a1.119 1.119 0 01.047-1.594l3.515-3.422H5.625c-.656 0-1.125-.469-1.125-1.125v-.75c0-.61.469-1.125 1.125-1.125h8.531l-3.515-3.375z' fill='%2316385D'/%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.slider__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  svg {
+    height: clamp(13rem, 13vw, 15rem);
+    width: 150px;
+  }
+}
+
+.slider__btn {
+  background: get-color('yellow');
+  padding: 16px;
+  @include apply-utility('weight', 'medium');
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+  text-decoration: none;
+  color: get-color('d-blue');
+}
+
+.slider__block {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+}

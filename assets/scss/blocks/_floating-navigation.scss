@@ -1,0 +1,32 @@
+.floating-navigation {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(0, 19, 26, 0) 0%, rgba(0, 19, 26, 0.2) 49.48%, #00131A 100%);
+  bottom: 0;
+}
+
+.nav-element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  bottom: 16px;
+  &[data-style="left"] { align-items: flex-start;}
+}
+
+.navigation-icon {
+  padding: 0.5rem 1rem;
+  border-radius: 26px;
+  margin-bottom: 8px;
+  background-color: #E1EFF7;
+}
+
+.navigation-icon svg {
+  height: 1.125rem;
+  display: block;
+}

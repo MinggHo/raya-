@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Vite App</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header class="raya-header bg-primary full-bleed">
+      <div class="wrapper">
+        <div class="header__block">
+          <a class="header__logo" href="/">
+            <img src="./assets/images/logo.svg" alt="">
+          </a>
+          <button class="menu__button">
+             <svg class="menu__svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 12"><rect width="32" height="4" rx="2" fill="#F2F2F2"/><rect x="8" y="8" width="24" height="4" rx="2" fill="#F2F2F2"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="nav__block bg-light box-hide">
+        <ul>
+          <li><a class="child" href="/">Home</a></li>
+          <li><a class="child" href="/lorong-makan.html">Lorong Makan</a></li>
+          <li><a class="child" href="/pasar-raya.html">Pasar Raya</a></li>
+          <li><a class="child" href="/surau-seismik.html">Surau Seismik</a></li>
+          <li><a class="child" href="/warung-lepak.html">Warung Lepak</a></li>
+          <li><a class="child" href="/jalan-hiburan.html">Jalan Hiburan</a></li>
+        </ul>
+      </nav>
+      <div class="countdown bg-yellow wrapper">
+        <p>Ramadan counter</p>
+      </div>
+    </header>
+    <aside class="waktu-solat wrapper" data-style="small">
+      <h5 class="color-light">Waktu solat widget</h5>
+    </aside>
+    <div class="category__header">
+      <h1 class="text-700 weight-bold color-d-blue">
+        Surau Seismik
+      </h1>
+      <img class="category__img" src="./assets/images/surau-seismik-img.png" alt="">
+    </div>
+    <div class="category__block">
+      <div class="wrapper">
+        <div class="story__listing flow"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
